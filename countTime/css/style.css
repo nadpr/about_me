@@ -1,0 +1,32 @@
+* { 
+  box-sizing: border-box; 
+}
+body {
+  background: #f1f2f3;
+}
+ul.counter { 
+  width: 60%;
+  padding-top: 50px;
+  margin: 0 auto; 
+  list-style: none;
+  text-align: center;
+  font-family: 'Jura', sans-serif;
+}
+ul.counter li { 
+  width: 25%; 
+  float: left; 
+}
+ul.counter li span:first-child { 
+   font-size: 36px;  
+   padding-bottom: 10px; 
+   border-bottom: #ddd 1px solid;
+   display: block;
+   margin: 0 30px;
+}
+ul.counter li span:last-child{ 
+   font-size: 13px; 
+   padding-top: 10px;
+   padding-bottom: 40px;
+   display: block;
+   text-transform: uppercase;
+}

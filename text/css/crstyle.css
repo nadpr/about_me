@@ -1,0 +1,188 @@
+html {
+  font: 16px 'Indie Flower';
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.75em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  line-height: 1.375em;
+}
+
+/*Base*/
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/*Layout*/
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  width: 100%;
+}
+
+:target {
+  z-index: 2;
+  opacity: 1;
+}
+
+/*Hidding mechanism*/
+input {
+  display: none;
+}
+
+input:checked ~ section {
+  width: 85%;
+}
+
+input:checked ~ nav > label:before {
+  content: "\f00d";
+}
+/*Sections*/
+section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  min-height: 100%;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-transition: width .5s, opacity .5s;
+          transition: width .5s, opacity .5s;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-top:10%;
+}
+
+/*Home*/
+.sec-home {
+  float: left;
+  position: relative;
+  background: #F24B4B;
+  color: #FFF;
+  opacity: 1;
+}
+
+.sec-home a {
+  color: #FFF;
+  -webkit-text-decoration-style: dashed;
+     -moz-text-decoration-style: dashed;
+          text-decoration-style: dashed;
+}
+.sec-home a:hover {
+  color: #13042B;
+  text-decoration:none;
+}
+.sec-home a:active {
+  color: #eda790;
+}
+
+.sec-home .content {
+  height: 50%;
+  text-align: center;
+}
+
+/*About*/
+.sec-about {
+  background-color:rgba(0,51,102,0.9);
+  color: #000;
+  margin-top:61.15%;
+}
+
+.sec-about .content {
+  height: 50%;
+  text-align: center;
+}
+
+
+/*Contact*/
+.sec-contact {
+  position:absolute;
+  background-color:rgba(0,51,102,0.9);
+  color: #000;
+  margin-top:61.15%;
+}
+
+.soc-media {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.soc-media li {
+  float: left;
+}
+
+.soc-media li:not(:first-child) a {
+  margin-left: .75em;
+}
+
+.soc-media a {
+  display: block;
+  color: #aaa;
+  font-size: 3em;
+  text-decoration: none;
+  -webkit-transition: color 0.5s ease;
+          transition: color 0.5s ease;
+}
+.soc-media a:hover {
+  color: #333;
+}
+.soc-media a:active {
+  color: #666;
+}
